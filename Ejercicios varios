@@ -1,0 +1,82 @@
+public class Suma {
+
+    public static void main(String[] args) {
+        int num1 = 5;
+        int num2 = 10;
+        int num3 = 3;
+        int resultado = sumaTresNumeros(num1, num2, num3);
+        System.out.println("La suma de los tres números es: " + resultado);
+    }
+
+    public static int sumaTresNumeros(int a, int b, int c) {
+        int suma = a + b + c;
+        return suma;
+    }
+}
+
+
+
+
+
+
+
+
+
+public class Coche {
+
+    private int numPuertas;
+
+    public Coche(int numPuertas) {
+        this.numPuertas = numPuertas;
+    }
+
+    public void añadirPuerta() {
+        numPuertas++;
+    }
+
+    public int getNumPuertas() {
+        return numPuertas;
+    }
+
+    public static void main(String[] args) {
+        Coche miCoche = new Coche(3);
+        miCoche.añadirPuerta();
+        System.out.println("Mi coche tiene " + miCoche.getNumPuertas() + " puertas.");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class Main {
+	
+	
+	public static void main(String[] args) {
+		Coche numPuertas = new Coche();
+		numPuertas.PonerPuertas();
+		numPuertas.PonerPuertas();
+		numPuertas.PonerPuertas();
+		System.out.println(numPuertas.puertas);
+	}
+
+	public static int suma(int a, int b) {
+		return a + b;
+	}
+}
+
+class Coche {
+	public int puertas = 0;
+
+	public void PonerPuertas() {
+		this.puertas++;
+	}
+}
